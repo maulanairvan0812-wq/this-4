@@ -1,7 +1,11 @@
 <!doctype html>
-<html>
+<html ⚡4email>
 <head>
 <meta charset="utf-8">
+
+<style amp4email-boilerplate>
+body{visibility:hidden}
+</style>
 
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 
@@ -11,7 +15,7 @@
 <script async custom-element="amp-form"
 src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
 
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
 
 <style amp-custom>
 
@@ -106,34 +110,31 @@ layout="responsive">
 
 <!-- RSVP FORM -->
 
-<form style="background-color: whitesmoke; padding:10px ; border-radius: 10px;" method="post"
-action-xhr="https://example.com/rsvp"
-target="_top">
 <div style="max-width:600px; margin:auto; background:#f5f5f5; padding:20px; border-radius:15px;">
 
-  <!-- Nama -->
-  <p style="font-weight:bold; color:#2f5d62;">Nama Lengkap</p>
-  <input 
-    type="text" 
-    id="nama"
-    placeholder="Masukan nama anda"
-    style="width:100%; padding:12px; border-radius:8px; border:1px solid #ddd; margin-bottom:20px;"
-  >
+<!-- Nama -->
+<p style="font-weight:bold; color:#2f5d62;">Nama Lengkap</p>
+<input 
+type="text" 
+id="nama"
+placeholder="Masukan nama anda"
+style="width:90%; padding:12px; border-radius:8px; border:1px solid #ddd; margin-bottom:20px;"
+>
 
-  <!-- WhatsApp -->
-  <p style="font-weight:bold; color:#2f5d62;">Nomor WhatsApp aktif</p>
-  <input 
-    type="tel" 
-    id="wa"
-    placeholder="Masukan No. WhatsApp"
-    style="width:100%; padding:12px; border-radius:8px; border:1px solid #ddd; margin-bottom:25px;"
-  >
+<!-- WhatsApp -->
+<p style="font-weight:bold; color:#2f5d62;">Nomor WhatsApp aktif</p>
+<input 
+type="tel" 
+id="wa"
+placeholder="Masukan No. WhatsApp"
+style="width:90%; padding:12px; border-radius:8px; border:1px solid #ddd; margin-bottom:25px;"
+>
 
-  <!-- Button -->
-  <button onclick="kirimForm()" 
-    style="width:100%; background:#ff6b00; color:white; padding:14px; border:none; border-radius:10px; font-size:16px; font-weight:bold; cursor:pointer;">
-    Kirim & Daftar
-  </button>
+<!-- Button -->
+<a href="https://maulanairvan0812-wq.github.io/this-5/" 
+style="background:#ff6b00; color:white; padding:12px 25px; border-radius:8px; text-decoration:none; display:inline-block;">
+Berikutnya
+</a>
 
 
 </div>
@@ -141,37 +142,10 @@ target="_top">
 <!-- FOOTER -->
 
 <!-- <div class="footer">
-© 2026 Docquity  
+© 2026 Docquity 
 </div> -->
 
 </div>
-<script>
-function kirimForm() {
-  const nama = document.getElementById("nama").value.trim();
-  const wa = document.getElementById("wa").value.trim();
 
-  if (nama === "") {
-    alert("Nama lengkap wajib diisi!");
-    return;
-  }
-
-  if (wa === "") {
-    alert("Nomor WhatsApp wajib diisi!");
-    return;
-  }
-
-  // validasi nomor sederhana (angka saja)
-  if (!/^[0-9]+$/.test(wa)) {
-    alert("Nomor WhatsApp harus berupa angka!");
-    return;
-  }
-
-  // jika semua valid
-  // alert("Data berhasil dikirim!");
-
-  //redirect
-  window.location.href = "https://maulanairvan0812-wq.github.io/this-5/";
-}
-</script>
 </body>
 </html>
